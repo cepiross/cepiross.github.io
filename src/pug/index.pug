@@ -42,9 +42,9 @@ html(lang='en')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#interests') Interests
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#experience') Experience
-                    li.nav-item
                         a.nav-link.js-scroll-trigger(href='#education') Education
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#experience') Experience
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#skills') Skills
                     li.nav-item
@@ -91,6 +91,45 @@ html(lang='en')
                             span.fa-li
                                 i.fas.fa-book
                             | Dynamic power/thermal management
+
+            hr.m-0
+
+            // Education
+            section#education.resume-section
+                .resume-section-content
+                    h2.mb-5 Education
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Pennsylvania State University
+                            .subheading.mb-3 Doctor of Philosophy
+                            div Computer Science and Engineering
+                            p Dissertation: Context-Aware Design and Optimization of Embedded DNN Architectures, co-advised by Prof. Vijaykrishnan Narayanan and Prof. John (Jack) Sampson. 
+                            | Presented a) hardware/software co-design to mitigate excessive off-chip memory access caused by Deep Neural Networks (DNN), b) DNN memory footprint reduction scheme to expedite training speed in approximate computing, and c) iterative functional verification methodology to validate DNN design in machine learning. <br/>
+                            img(src='assets/img/wavg-dist-dnn.png' style='height:250px;')
+                        .flex-shrink-0
+                            span.text-primary August 2015 - December 2019
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Korea University
+                            .subheading.mb-3 Master of Engineering
+                            div Computer and Radio Communications Engineering - Computer Science and Engineering Track
+                            p Thesis: A Novel Thermal Simulation Framework to Reflect Ambient Changes, advised by Prof. Sung Woo Chung.
+                            | Proposed a system-wide thermal simulation framework for computer architecture design that reflects ambient temperature changes, by using the mechanical heat flow model as well as microarchitectural performance event-based thermal model. <br/>
+                            img(src='assets/img/dtm.png' style='height:250px;')
+                        .flex-shrink-0
+                            span.text-primary March 2008 - February 2010
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between
+                        .flex-grow-1
+                            h3.mb-0 Korea University
+                            .subheading.mb-3 Bachelor of Engineering
+                            div Computer Science and Engineering
+                            p Undergraduate Research Project: A Dual Integer Register File Structure for Temperature-Aware Microprocessors <br/>
+                            img(src='assets/img/dual-reg.png' style='height:250px;')
+                        .flex-shrink-0
+                            span.text-primary March 2004 - February 2008
 
             hr.m-0
 
@@ -206,42 +245,6 @@ html(lang='en')
                                 | Research Intern at SoC & Microprocessor Research Laboratory (SMRL). Conducted study & research to design temperature-aware microarchitecture. To mitigate on-chip thermal hotspot problem, developed a microarchitectural simulator that incorporates microarchitectural modeling (SimpleScalar), architectural power estimation (Wattch), and thermal behavior analysis (HotSpot), then experimented with architectural changes from the perspective of performance, power, and temperature. In the course of this role, published 1 Korea domestic journal paper.
                         .flex-shrink-0
                             span.text-primary July 2006 - February 2008
-            hr.m-0
-
-            // Education
-            section#education.resume-section
-                .resume-section-content
-                    h2.mb-5 Education
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 Pennsylvania State University
-                            .subheading.mb-3 Doctor of Philosophy
-                            div Computer Science and Engineering
-                            p Dissertation: Context-Aware Design and Optimization of Embedded DNN Architectures, co-advised by Prof. Vijaykrishnan Narayanan and Prof. John (Jack) Sampson. 
-                            | Presented a) hardware/software co-design to mitigate excessive off-chip memory access caused by Deep Neural Networks (DNN), b) DNN memory footprint reduction scheme to expedite training speed in approximate computing, and c) iterative functional verification methodology to validate DNN design in machine learning.
-                        .flex-shrink-0
-                            span.text-primary August 2015 - December 2019
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 Korea University
-                            .subheading.mb-3 Master of Engineering
-                            div Computer and Radio Communications Engineering - Computer Science and Engineering Track
-                            p Thesis: A Novel Thermal Simulation Framework to Reflect Ambient Changes, advised by Prof. Sung Woo Chung.
-                            | Proposed a system-wide thermal simulation framework for computer architecture design that reflects ambient temperature changes, by using the mechanical heat flow model as well as microarchitectural performance event-based thermal model.
-                        .flex-shrink-0
-                            span.text-primary March 2008 - February 2010
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between
-                        .flex-grow-1
-                            h3.mb-0 Korea University
-                            .subheading.mb-3 Bachelor of Engineering
-                            div Computer Science and Engineering
-                            p GPA: 3.87/4.5
-                        .flex-shrink-0
-                            span.text-primary March 2004 - February 2008
-
             hr.m-0
 
             // Skills
