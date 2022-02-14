@@ -14,9 +14,8 @@ html(lang='en')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v5.15.4/js/all.js', crossorigin='anonymous')
-        // Devicon
-        link(href='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css',
-        rel='stylesheet')
+        // Iconify - open source vector icons
+        script(src='https://code.iconify.design/2/2.1.2/iconify.min.js', crossorigin='anonymous')
 
         // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
@@ -251,41 +250,72 @@ html(lang='en')
             section#skills.resume-section
                 .resume-section-content
                     h2.mb-5 Skills
-                    .subheading.mb-3 Programming Languages & Tools
+                    .subheading.mb-3 Languages & Tools
                     ul.list-inline.dev-icons
                         li.list-inline-item
-                            i.devicon-c-plain
+                            a(href='https://en.cppreference.com/w/c')
+                                i.iconify-inline(data-icon="teenyicons:c-solid")
                         li.list-inline-item
-                            i.devicon-cplusplus-plain
+                            a(href='https://en.cppreference.com/w/cpp')
+                                i.iconify-inline(data-icon="teenyicons:cplusplus-solid")
                         li.list-inline-item
-                            i.devicon-csharp-plain
+                            a(href='https://docs.microsoft.com/en-us/dotnet/csharp/')
+                                i.iconify-inline(data-icon="teenyicons:c-sharp-solid")
                         li.list-inline-item
-                            i.devicon-bash-plain
+                            a(href='https://ieeexplore.ieee.org/document/1560791')
+                                i.iconify-inline(data-icon="file-icons:systemverilog")
                         li.list-inline-item
-                            i.devicon-python-plain-wordmark
+                            a(href='https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html')
+                                i.iconify-inline(data-icon="file-icons:assembly-intel")
                         li.list-inline-item
-                            i.devicon-java-plain-wordmark
+                            a(href='https://developer.arm.com/architectures/cpu-architecture/a-profile/docs')
+                                i.iconify-inline(data-icon="file-icons:assembly-arm")
                         li.list-inline-item
-                            i.devicon-javascript-plain
+                            a(href='https://www.gnu.org/software/bash/')
+                                i.iconify-inline(data-icon="codicon:terminal-bash")
                         li.list-inline-item
-                            i.devicon-markdown-original
+                            a(href='https://docs.python.org/3/')
+                                i.iconify-inline(data-icon="vscode-icons:file-type-python")
+                        li.list-inline-item
+                            a(href='https://openjdk.java.net/')
+                                i.iconify-inline(data-icon="vscode-icons:file-type-java")
+                        li.list-inline-item
+                            a(href='https://www.latex-project.org/')
+                                i.iconify-inline(data-icon="vscode-icons:file-type-light-tex")
+                        li.list-inline-item
+                            a(href='https://daringfireball.net/projects/markdown/')
+                                i.iconify-inline(data-icon="bx:bxl-markdown")
+                        li.list-inline-item
+                            a(href='https://tc39.es/ecma262/')
+                                i.iconify-inline(data-icon="bx:bxl-javascript")
                     ul.list-inline.dev-icons
                         li.list-inline-item
-                            i.devicon-azure-plain-wordmark
+                            a(href='https://docs.kernel.org/')
+                                i.iconify-inline(data-icon="logos:linux-tux")
                         li.list-inline-item
-                            i.devicon-linux-plain
+                            a(href='https://www.debian.org/doc/')
+                                i.iconify-inline(data-icon="logos:debian")
                         li.list-inline-item
-                            i.devicon-android-plain-wordmark
+                            a(href='https://developer.android.com/about/versions/jelly-bean')
+                                i.iconify-inline(data-icon="logos:android-icon")
                         li.list-inline-item
-                            i.devicon-git-plain-wordmark
+                            a(href='https://git-scm.com/')
+                                i.iconify-inline(data-icon="logos:git")
                         li.list-inline-item
-                            i.devicon-nodejs-plain-wordmark
+                            a(href='https://nodejs.org/en/')
+                                i.iconify-inline(data-icon="logos:nodejs")
                         li.list-inline-item
-                            i.devicon-numpy-original-wordmark
+                            a(href='https://numpy.org/')
+                                i.iconify-inline(data-icon="logos:numpy")
                         li.list-inline-item
-                            i.devicon-tensorflow-original-wordmark
+                            a(href='https://www.tensorflow.org/')
+                                i.iconify-inline(data-icon="logos:tensorflow")
                         li.list-inline-item
-                            i.devicon-mysql-plain-wordmark
+                            a(href='https://docs.microsoft.com/en-us/azure/devops')
+                                i.iconify-inline(data-icon="logos:microsoft-azure")
+                        li.list-inline-item
+                            a(href='https://mariadb.org/')
+                                i.iconify-inline(data-icon='logos:mariadb-icon')
                     .subheading.mb-3 Workflow
                     ul.fa-ul.mb-0
                         li
