@@ -41,6 +41,8 @@ html(lang='en')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#interests') Interests
                     li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#publication') Publication
+                    li.nav-item
                         a.nav-link.js-scroll-trigger(href='#education') Education
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#experience') Experience
@@ -82,17 +84,66 @@ html(lang='en')
                     ul.fa-ul.mb-0
                         li
                             span.fa-li
-                                i.fas.fa-graduation-cap
+                                i.fas.fa-bookmark
                             | Systematic/Architectural Design and Support for Machine Learning
                         li
                             span.fa-li
-                                i.fas.fa-graduation-cap
+                                i.fas.fa-bookmark
                             | Energy-efficient/Low-power computing system, Parallel processing techniques
                         li
                             span.fa-li
-                                i.fas.fa-graduation-cap
+                                i.fas.fa-bookmark
                             | Dynamic power/thermal management
 
+            hr.m-0
+
+            // Publication
+            section#publication.resume-section
+                .resume-section-content
+                    h2.mb-5 Selected Papers
+                    ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fas.fa-graduation-cap
+                            | !{pub['Choi2019ContextAwareDNN']['bib']}
+                            |
+                            a(href='https://etda.libraries.psu.edu/catalog/17130jpc5731') [url]
+                            a(href='assets/bib/2019phd.bib') [bib]
+                        li
+                            span.fa-li
+                                i.fas.fa-book
+                            | !{pub['Choi2019WavgPool']['bib']}
+                            |
+                            a(href=pub['Choi2019WavgPool']['doi']) [doi]
+                            a(href='assets/bib/2019dac.bib') [bib]
+                        li
+                            span.fa-li
+                                i.fas.fa-book
+                            | !{pub['Choi2018HeuristicApprox']['bib']}
+                            |
+                            a(href=pub['Choi2018HeuristicApprox']['doi']) [doi]
+                            a(href='assets/bib/2018iccd.bib') [bib]
+                        li
+                            span.fa-li
+                                i.fas.fa-book
+                            | !{pub['Choi2018VLIWNPU']['bib']}
+                            |
+                            a(href=pub['Choi2018VLIWNPU']['doi']) [doi]
+                            a(href='assets/bib/2018isvlsi.bib') [bib]
+                        li
+                            span.fa-li
+                                i.fas.fa-book
+                            | !{pub['Jang2013DTM']['bib']}
+                            |
+                            a(href=pub['Jang2013DTM']['doi']) [doi]
+                            a(href='assets/bib/2013tc.bib') [bib]
+                        li
+                            span.fa-li
+                                i.fas.fa-graduation-cap
+                            | !{pub['Choi2010ThermFramework']['bib']}
+                            |
+                            a(href='https://library.korea.ac.kr/detail/?cid=CAT000045588973') [url]
+                            a(href='assets/bib/2010master.bib') [bib]
             hr.m-0
 
             // Education
@@ -106,7 +157,7 @@ html(lang='en')
                                 a(href='https://www.eecs.psu.edu/') Pennsylvania State University
                             .subheading.mb-3 Doctor of Philosophy
                             div Computer Science and Engineering
-                            p Dissertation: #[a(href='https://etda.libraries.psu.edu/catalog/17130jpc5731') Context-Aware Design and Optimization of Embedded DNN Architectures]
+                            p Dissertation: Context-Aware Design and Optimization of Embedded DNN Architectures
                                 | , co-advised by
                                 |
                                 | #[a(href='https://sites.psu.edu/vijaykrishnannarayanan/') Prof. Vijaykrishnan Narayanan] and #[a(href='http://www.cse.psu.edu/~jms1257/') Prof. John (Jack) Sampson]
@@ -121,7 +172,7 @@ html(lang='en')
                                 a(href='https://cs.korea.ac.kr/') Korea University
                             .subheading.mb-3 Master of Engineering
                             div Computer Science and Engineering
-                            p Thesis: #[a(href='https://library.korea.ac.kr/detail/?cid=CAT000045588973') A Novel Thermal Simulation Framework to Reflect Ambient Changes]
+                            p Thesis: A Novel Thermal Simulation Framework to Reflect Ambient Changes
                                 | , advised by #[a(href='http://smrl.korea.ac.kr/bbs/professor_biographical_sketch.php') Prof. Sung Woo Chung]
                             | Proposed a system-wide thermal simulation framework for computer architecture design that reflects ambient temperature changes, by using the mechanical heat flow model as well as microarchitectural performance event-based thermal model.
                             img(src='assets/img/dtm.png' style='height:225px;')
